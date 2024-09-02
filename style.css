@@ -1,0 +1,60 @@
+/*! THE CODE IN HERE SHOULD JUST BE *UNCHANGEABLE* THINGS, NOT SIZING/POSITIONING */
+
+.wrapper {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  border: 1px solid #000;
+}
+
+.studio-container {
+  border: 1px solid #000;
+  height: 300px;
+}
+.rounded-card {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+/*! RESPONSIVE */
+/*? CHANGE THE SIZES/POSITIONING IN HERE, NOT IN THE CODE ABOVE*/
+
+/* Mobile Portrait */
+@media screen and (min-width: 320px) {
+  .studio-container {
+    width: 100%;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (min-width: 480px) {
+}
+
+/* IPad Portrait */
+@media screen and (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Browser, IPad Landscape */
+@media screen and (min-width: 1024px) {
+}
+
+/* Small Browser */
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Big Browser */
+@media screen and (min-width: 1600px) {
+}
