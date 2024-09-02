@@ -1,0 +1,66 @@
+.competitions-wrapper {
+  padding: 0 50px;
+}
+
+.year-wrapper {
+}
+
+.group {
+  margin: 32px 0;
+}
+
+.line {
+  margin: 16px 0;
+}
+
+.line.text {
+  color: white;
+  font-size: 36px;
+}
+
+.line.grid {
+  /* width: fit-content;
+  margin: auto; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+.line.grid .recital {
+ position: relative;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+/* Mobile Portrait */
+@media screen and (min-width: 320px) {
+}
+
+/* Mobile Landscape */
+@media screen and (min-width: 480px) {
+}
+
+/* IPad Portrait */
+@media screen and (min-width: 768px) {
+  .line.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Browser, IPad Landscape */
+@media screen and (min-width: 1024px) {
+}
+
+/* Small Browser */
+@media screen and (min-width: 1200px) {
+  .recital {
+    max-width: 500px;
+  }
+}
+
+/* Big Browser */
+@media screen and (min-width: 1400px) {
+  .line.grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
