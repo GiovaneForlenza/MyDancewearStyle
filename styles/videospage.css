@@ -22,9 +22,9 @@
   grid-template-columns: repeat(3, 1fr);
 }
 .video-wrapper {
- position: relative;
-  width: 300px;
-  height: 200px;
+  position: relative;
+  width: 350px;
+  aspect-ratio: 16/9;
 }
 
 /* Mobile Portrait */
@@ -42,14 +42,14 @@
 }
 
 /* IPad Portrait */
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 800px) {
   .videos-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Browser, IPad Landscape */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1124px) {
   .videos-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -62,7 +62,7 @@
 }
 
 /* Big Browser */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1470px) {
   .videos-wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
