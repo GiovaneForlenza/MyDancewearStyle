@@ -6,6 +6,7 @@
   justify-content: space-between;
   gap: 16px;
   max-width: 1400px;
+  margin-top: 32px;
 }
 
 .video-wrapper {
@@ -15,7 +16,7 @@
 }
 
 .video-description-wrapper {
-  padding: 24px;
+  padding: 16px;
   box-sizing: border-box;
   color: white;
 }
@@ -45,6 +46,10 @@
 
 /* Small Browser */
 @media screen and (max-width: 1200px) {
+  .video-description-wrapper {
+    padding: 0;
+    font-size: 16px;
+  }
   .video-and-description-wrapper {
     flex-direction: column;
   }
