@@ -17,7 +17,6 @@ body {
   height: 86px;
   width: 100%;
   background-color: var(--background-dark-purple);
-  margin-bottom: 40px;
   box-shadow: 0pc 5px 10px 0px #000;
   color: #fff;
   display: flex;
@@ -31,10 +30,13 @@ body {
 
 .wrapper {
   display: grid;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
   width: fit-content;
-  margin: auto;
+  margin: 16px auto;
+}
+.studio-container {
+  width: 370px;
 }
 .background-image {
   position: relative;
@@ -69,35 +71,32 @@ body {
 /*? CHANGE THE SIZES/POSITIONING IN HERE, NOT IN THE CODE ABOVE*/
 
 /* Mobile Portrait */
-@media screen and (min-width: 320px) {
-  .studio-container {
-    width: 80%;
-  }
+@media screen and (max-width: 320px) {
 }
 
 /* Mobile Landscape */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+  .wrapper {
+    margin: 16px;
+  }
+  .studio-container{
+    width: 100%;
+  }
 }
 
 /* IPad Portrait */
 @media screen and (min-width: 768px) {
-  .studio-container {
-    width: 100%;
-  }
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Browser, IPad Landscape */
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
 }
 
 /* Small Browser */
-@media screen and (min-width: 1200px) {
-  .studio-container {
-    max-width: 400px;
-  }
+@media screen and (max-width: 1200px) {
 }
 
 /* Big Browser */
