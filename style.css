@@ -28,6 +28,7 @@ body {
 }
 .studio-container {
   width: 370px;
+  cursor: pointer;
 }
 .background-image {
   position: relative;

@@ -30,6 +30,7 @@
   position: relative;
   width: 350px;
   height: 230px;
+  cursor: pointer;
 }
 
 /* Mobile Portrait */
