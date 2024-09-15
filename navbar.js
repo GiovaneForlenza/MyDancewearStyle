@@ -3,7 +3,7 @@ document.write(`<div class="navbar" onclick="window.location.href = '../index.ht
     <i class="fa-solid fa-lg fa-archive"></i>
   </span>
   <span
-    data-tooltip="Return to last watched studio (KID default)"
+    data-tooltip="Return to last watched studio"
     data-flow="right"
   >
     <i class="fa-solid fa-house"></i>

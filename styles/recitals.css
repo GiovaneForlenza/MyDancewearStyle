@@ -1,6 +1,7 @@
 .competitions-wrapper {
-  padding: 0 48px;
+  padding: 16px 48px;
   margin: auto;
+  /* border: 1px solid #f00; */
 }
 
 .group {
