@@ -21,10 +21,13 @@ body {
 
 .wrapper {
   display: grid;
+  border: 1px solid #000;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   width: fit-content;
-  margin: 16px auto;
+  margin: auto;
+  padding: 16px 0;
+  box-sizing: border-box;
 }
 .studio-container {
   width: 370px;
