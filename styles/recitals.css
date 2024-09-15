@@ -1,7 +1,6 @@
 .competitions-wrapper {
   padding: 0 48px;
   margin: auto;
-  border: 1px solid #0f0;
 }
 
 .group {
@@ -21,12 +20,11 @@
   display: grid;
   align-items: center;
   grid-column-gap: 16px;
-  grid-template-columns: repeat(auto-fill, 370px);
+  grid-template-columns: repeat(auto-fill, 360px);
   grid-row-gap: 16px;
 }
 .line.grid .recital {
-  height: 300px;
-  width: 350px;
+  height: 230px;
 }
 
 /* Mobile Portrait */
@@ -43,7 +41,6 @@
 @media screen and (max-width: 480px) {
   .competitions-wrapper {
     padding: 0 16px;
-    border: 1px solid #0f0;
   }
 }
 

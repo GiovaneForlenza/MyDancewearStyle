@@ -13,6 +13,10 @@
 .next {
   cursor: pointer;
 }
+.previous,.next{
+  font-size: 20px;
+  color: rgb(201, 201, 201);
+}
 
 .videos-wrapper {
   display: grid;
@@ -24,7 +28,7 @@
 .video-wrapper {
   position: relative;
   width: 350px;
-  aspect-ratio: 16/9;
+  height: 230px;
 }
 
 /* Mobile Portrait */
@@ -52,6 +56,9 @@
 @media screen and (min-width: 1124px) {
   .videos-wrapper {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .year-nav-wrapper{
+    padding: 16px 48px;
   }
 }
 

@@ -12,20 +12,11 @@ body {
   background: var(--background-purple);
   padding: 0;
   margin: 0;
+  height: 100dvh;
 }
-.navbar {
-  height: 86px;
-  width: 100%;
-  background-color: var(--background-dark-purple);
-  box-shadow: 0pc 5px 10px 0px #000;
-  color: #fff;
+.home-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-}
-.navbar i {
-  cursor: pointer;
+  flex-direction: column;
 }
 
 .wrapper {
@@ -79,7 +70,7 @@ body {
   .wrapper {
     margin: 16px;
   }
-  .studio-container{
+  .studio-container {
     width: 100%;
   }
 }
@@ -93,10 +84,15 @@ body {
 
 /* Browser, IPad Landscape */
 @media screen and (max-width: 1024px) {
+  .wrapper {
+  }
 }
 
 /* Small Browser */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .home-container {
+    height: 100%;
+  }
 }
 
 /* Big Browser */
