@@ -14,14 +14,19 @@ body {
   margin: 0;
   height: 100dvh;
 }
-.home-container {
+.home-wrapper {
   display: flex;
   flex-direction: column;
+}
+.studios-wrapper {
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .wrapper {
   display: grid;
-  border: 1px solid #000;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   width: fit-content;
@@ -55,10 +60,10 @@ body {
 .overlay-text {
   position: absolute;
   color: #fff;
-  padding: 10px 20px;
+  padding: 0px 8px;
   border-bottom: 1px solid #fff;
   width: fit-content;
-  font-size: 24px;
+  font-size: 20px;
   z-index: 50;
 }
 
@@ -103,5 +108,8 @@ body {
 @media screen and (min-width: 1400px) {
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .home-wrapper {
+    height: 100dvh;
   }
 }
